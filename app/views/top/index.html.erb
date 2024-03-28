@@ -1,0 +1,8 @@
+<% #入力画面 %>
+<h1>アナグラム</h1>
+<%= form_with url: "/show", method: :get do |form| %>
+    <%= form.label :query, "Type original Text" %>
+    <%= form.text_field :query %>
+    <% #提出ボタン %>
+    <%= form.submit "Submit" %>
+<% end %>
